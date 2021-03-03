@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    tasks: []
   },
   mutations: {
+    TaskAdd (state) {
+      state.tasks.push('hello')
+    }
   },
   actions: {
   },

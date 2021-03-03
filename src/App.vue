@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <to-do-list></to-do-list>
+    <ToDoList></ToDoList>
   </div>
 </template>
 
 <script>
 import ToDoList from './components/ToDoList.vue'
+
 export default {
   name: 'App',
-  // store,
   components: {
     ToDoList
   }
@@ -17,12 +16,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    margin: auto;
+    width: 50%;
+  }
 </style>
